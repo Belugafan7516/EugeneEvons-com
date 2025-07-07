@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/",
+      "has": [{ "host": "catweb.eugeneevons.com" }],
+      "destination": "/catweb.html"
+    }
+  ]
+}
