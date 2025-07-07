@@ -1,13 +1,14 @@
 {
+  "cleanUrls": true,
   "rewrites": [
     {
       "source": "/",
-      "destination": "/index.html"
+      "has": [{ "type": "host", "value": "catweb.eugeneevons.com" }],
+      "destination": "/catweb.html"
     },
     {
       "source": "/",
-      "has": [{ "host": "catweb.eugeneevons.com" }],
-      "destination": "/catweb.html"
+      "destination": "/index.html"
     }
   ]
 }
